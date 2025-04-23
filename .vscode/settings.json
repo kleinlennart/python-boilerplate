@@ -1,17 +1,15 @@
 {
-    "terminal.integrated.cwd": "${workspaceFolder}",
     "workbench.colorCustomizations": {
-        // "titleBar.activeBackground": "#000000",
+        "titleBar.activeBackground": "#5B92E5", // UN Blue
         "titleBar.activeForeground": "#FFFFFF"
     },
 
+    "terminal.integrated.cwd": "${workspaceFolder}",
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-    "python.analysis.extraPaths": [
-        "src"
-    ],
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [ "src" ],
 
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
