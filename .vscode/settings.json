@@ -1,3 +1,5 @@
+// Workspace-specific settings
+
 {
     "workbench.colorCustomizations": {
         "titleBar.activeBackground": "#5B92E5", // UN Blue
@@ -9,10 +11,27 @@
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.extraPaths": [ "src" ],
+    "python.analysis.extraPaths": [ "python" ],
 
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "indent",
     // "editor.renderWhitespace": "all",
+
+
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // Hide from the Explorer
+    "files.exclude": {
+        "**/__pycache__": true,
+        "src/*.egg-info": true,
+        ".ruff_cache": true,
+        ".pytest_cache": true
+    },
+
+    "workbench.iconTheme": "material-icon-theme",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "interactiveWindow.executeWithShiftEnter": true,
 }

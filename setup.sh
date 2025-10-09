@@ -1,22 +1,6 @@
+#!/usr/bin/env bash
 
-git init
+# curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# https://www.python.org/downloads/
-
-
-pyenv versions
-
-brew update && brew upgrade pyenv
-pyenv install 3.13.2
-
-
-# Set loval pyenv version for this repo
-pyenv local 3.13.2
-
-
-python -m venv .venv
-
-source .venv/bin/activate
-
-which python
-python --version
+uv sync
+cp .env.example .env
