@@ -1,0 +1,4 @@
+- Python 3.14
+- use context7 to get most up-to-date documentation on packages and APIs (e.g., OpenAI API)
+- prefer concise and DRY code
+- do not wrap everything in print statements
