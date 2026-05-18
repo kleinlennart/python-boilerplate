@@ -1,37 +1,39 @@
 // Workspace-specific settings
-
 {
+    // Workbench
     "workbench.colorCustomizations": {
-        "titleBar.activeBackground": "#009edb", // UN Blue
-        "titleBar.activeForeground": "#FFFFFF"
+        "titleBar.activeBackground": "#009edb",
+        "titleBar.activeForeground": "#ffffff"
     },
+    "workbench.iconTheme": "material-icon-theme",
 
-    "terminal.integrated.cwd": "${workspaceFolder}",
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.extraPaths": [ "python" ],
-
+    // Editor
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "indent",
-    // "editor.renderWhitespace": "all",
 
+    // Terminal
+    "terminal.integrated.cwd": "${workspaceFolder}",
+
+    // Python
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [ "src" ],
 
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
 
-    // Hide from the Explorer
-    "files.exclude": {
-        "**/__pycache__": true,
-        "src/*.egg-info": true,
-        ".ruff_cache": true,
-        ".pytest_cache": true
-    },
-
-    "workbench.iconTheme": "material-icon-theme",
+    // Jupyter
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "interactiveWindow.executeWithShiftEnter": true,
+
+    // Files
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.egg-info": true,
+        ".ruff_cache": true,
+    }
 }
